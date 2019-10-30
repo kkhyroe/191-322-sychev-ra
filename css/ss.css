@@ -3,15 +3,21 @@
     src: url(../fonts/Junior.otf);
 }
 
+@font-face {
+    font-family: 'Departure';
+    src: url(../fonts/Departure_Regular.otf)
+}
+
 body {
     background-image: url(../img/star-2823526_1280.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
+    background-attachment: fixed;
     margin: 0;
     padding: 0;
 }
 
-.body {
+.header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -21,25 +27,145 @@ body {
     background-color: rgba(100, 100, 100, 0.4);
 }
 
-.body h1,
-.body h2,
-.body h3 {
+.header h1,
+.header h2,
+.header h3 {
     color: white;
     font-family: 'Junior';
     font-size: 400%;
     margin: 0;
     margin-top: 50px;
+    text-transform: uppercase;
 }
 
-.body h2 {
+.header h1:hover {
+    color: lightsalmon;
+    transition-delay: 1.5s;
+}
+
+.header h2 {
     font-size: 200%;
     color: lightblue;
     margin-top: 10px;
 }
 
-.body h3 {
+.header h3 {
     font-size: 150%;
     color: lightgoldenrodyellow;
     margin-top: 0;
     margin-bottom: 50px;
+}
+
+.login {
+    margin: 0 auto;
+    margin-top: 50px;   
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 20%;
+    background-color: rgba(100, 100, 100, 0.4);
+    padding: 25px 25px;
+    font-family: 'Departure';
+    color: white;
+    margin-bottom: 50px;
+}
+
+.login label .forma {
+    width: 200px;
+    float: right;
+    margin-right: 100px;
+}
+
+.login label {
+    margin-bottom: 15px;
+}
+
+.login a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.login .sub {
+    background-color: lightsalmon;
+    border: 2px solid black;
+}
+
+.login a:hover {
+    color: lightsalmon;
+}
+
+.help {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+.help h2 {
+    margin-top: 50px;
+    font-size: 200%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'junior';
+}
+
+.help p {
+    margin: 0 300px;
+    text-align: justify;
+    color: lightskyblue;
+    font-family: 'Departure';
+    font-size: larger;
+    margin-bottom: 50px;
+}
+
+.help p b {
+    color: blue;
+}
+
+.help p a {
+    color: skyblue;
+}
+
+.help p::selection,
+.help h2::selection {
+    color: pink;
+    background: black;
+}
+
+.gallery {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(100, 100, 100, 0.4);
+}
+
+.gallery h2 {
+    margin: 0;
+    margin-top: 50px;
+    font-size: 200%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'junior';
+}
+
+.gallery .imags {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.gallery .imags .imag {
+    margin-bottom: 50px;
+    width: 350px;
+    height: 350px;
+    border: 4px solid lightsalmon;
 }
